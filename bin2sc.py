@@ -14,7 +14,7 @@ if __name__ == "__main__":
 		for b in open(sys.argv[1], "rb").read():
 			shellcode += "\\x" + b.encode("hex")
 			if ctr == maxlen:
-				shellcode += "\" +\n\""
+				shellcode += "\" \n\""
 				ctr = 0
 			ctr += 1
 		shellcode += "\""
