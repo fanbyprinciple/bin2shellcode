@@ -5,7 +5,7 @@ if __name__ == "__main__":
 		print "usage: %s file.bin c|cs\n" % (sys.argv[0],)
 		sys.exit(0)
 
-	if sys.argv[3] == "c":
+	if sys.argv[2] == "c":
 		# for c shellcode
 		shellcode = "\""
 		ctr = 1
